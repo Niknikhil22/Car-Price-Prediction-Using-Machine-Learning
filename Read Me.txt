@@ -1,0 +1,56 @@
+Dataset Overview
+The dataset utilized for this project was obtained from an online car marketplace on Kaggle. It contains comprehensive details about various cars, including their specifications and prices. The key features of the dataset include:
+
+Engine Size (Horsepower): A numeric value indicating the car's engine power.
+Fuel Efficiency (City MPG): A numeric measure of miles per gallon in urban driving conditions.
+Fuel Efficiency (Highway MPG): A numeric measure of miles per gallon during highway driving.
+Year of Manufacture: The production year of the vehicle.
+Brand Popularity: A numerical score (0–100) reflecting the market popularity of the car's brand.
+Car Type: A categorical variable indicating the car's body style (e.g., sedan, SUV, hatchback).
+Price: The target variable representing the car's selling price in USD.
+Project Highlights
+This project successfully built a machine learning model to predict car prices using various features. The Ridge Regression model emerged as the top-performing approach, achieving a test set RMSE of 0.52. The findings revealed that factors such as engine size, horsepower, and brand popularity significantly influence car prices. By incorporating regularization, Ridge Regression mitigated overfitting and performed effectively on unseen data.
+
+This model serves as a valuable resource for stakeholders:
+
+Manufacturers and Dealerships: Helps refine pricing strategies and enhance market competitiveness.
+Consumers: Assists in evaluating fair market prices, enabling informed purchasing decisions.
+Objective
+The primary goal of this project was to develop a machine learning model capable of predicting car prices based on multiple vehicle attributes, including numerical features (e.g., engine size, horsepower) and categorical variables (e.g., car make). By analyzing these attributes, the model identifies patterns and relationships to make accurate price predictions.
+
+Key objectives include:
+
+Building a Predictive Model: Applicable in real-world scenarios to support data-driven decision-making in the automotive sector.
+Algorithm Exploration: Comparing machine learning models based on accuracy, interpretability, and performance on unseen data.
+Evaluation Metrics: Using standard regression measures like RMSE to select the most reliable model for deployment.
+Data Preprocessing
+Missing Values: Replaced missing entries in features like horsepower and fuel efficiency with their mean values.
+Categorical Encoding: Transformed categorical variables (e.g., car make, model) into numeric format using one-hot encoding.
+Data Normalization: Applied log transformation to the 'Price' feature to reduce skewness and enhance model performance.
+Why Preprocessing Matters: Ensures data quality and facilitates effective interpretation by machine learning models.
+
+Machine Learning Model
+Chosen Model: Ridge Regression was selected to address multicollinearity and prevent overfitting.
+Training Process:
+Dataset Split: 60% for training, 20% for validation, and 20% for testing.
+Advantages of Ridge Regression:
+Penalizes large coefficients.
+Effectively handles numerical and categorical data.
+Generalizes well to new data.
+Model Performance
+RMSE (Root Mean Squared Error):
+Training Set: 0.45
+Validation Set: 0.55
+Visualization: A line graph illustrates the comparison between predicted and actual prices on the validation set.
+Results & Insights
+Key Findings:
+Engine size and vehicle age significantly influence price predictions.
+The model achieved an RMSE of 0.55, demonstrating high prediction accuracy.
+Applications:
+For Dealerships: Helps optimize vehicle pricing strategies based on specifications.
+For Consumers: Offers insights into fair market prices for different car models and types.
+Conclusion
+An accurate car price prediction model was developed using a robust dataset. The model holds potential to guide manufacturers, dealerships, and consumers in making data-informed decisions.
+
+Future Scope: Enhancing the model with additional data and features could further improve its accuracy and applicability across various automotive industry sectors.
+
